@@ -1,1 +1,77 @@
+Algoritmos - Arrays e Slices
 
+1º 
+
+package main
+
+import "fmt"
+
+func main() {
+	var soma int64
+
+	numeros := []int64{1,2,3,4}
+
+	for _, numero := range numeros {
+		soma = soma + numero
+	}
+	fmt.Println(soma)
+}
+
+2º 
+
+package main
+
+import "fmt"
+
+func main() {
+	x := []int{1,2,3,4,5}
+		fmt.Println(x)
+		x = append(x[:2], x[3:]...)
+		fmt.Println(x)
+}
+
+3º
+
+package main
+
+import "fmt"
+
+func main() {
+	var mul int64 = 1
+
+	x := []int64{1,2,3}
+
+	for _, y:= range x {
+		mul = mul * y
+	}
+	fmt.Println(mul)
+}
+
+4º
+
+package main
+
+import "fmt"
+
+func main() {
+	var x int
+		var num int
+			var slice []int
+				var soma int
+
+	fmt.Print("Digite o tamanho do slice: ")
+	fmt.Scan(&x)
+
+	for i := 0; i < x; i++ {
+		fmt.Print("Digite um número: ")
+		fmt.Scan(&num)
+		slice = append(slice, num)
+	}
+  		fmt.Println(slice)
+	for _, y := range slice {
+		soma =  y + soma
+	}
+	 fmt.Println(soma)
+}
+
+5º
